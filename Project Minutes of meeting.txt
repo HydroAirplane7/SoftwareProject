@@ -1,8 +1,0 @@
-Minutes of meeting 21/05/24 Programming project 
-
-Discussed about project works and schdedule
-Isaac -Github updates
-Josh- Psuedo code
-Isaac and Josh - Coding and Unit  and performance testing 
-Raja Flowchart, User acceptance testing and User documentation.
-Isaac,Josh and Raja Final documentation
