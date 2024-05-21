@@ -18,14 +18,21 @@
 
 IMPORT required modules
 
+######## Inisialise Character set lists
+SET uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+SET lowercase = "abcdefghijklmnopqrstuvwxyz"
+SET numbers = "1234567890"
+SET symbols = "~!@#$%^&*()-_+="
+
 SET variable WordOrPhrase
 SET variable Length
-SET variable Lower
-SET variable Upper
-SET variable Numbers
-SET variable Symbols
+SET variable DoLower
+SET variable DoUpper
+SET variable DoNumbers
+SET variable DoSymbols
 SET variable DoExport
 SET variable OutFile
+SET variable NumberOf
 
 OUTPUT "Welcome to the Secure Password Generator Program!"
 
@@ -40,16 +47,16 @@ ELSE
 
 OUTPUT "For the following, type YES or NO for the character sets you want included in the Password/phrase"
 OUTPUT "Lowercase letters: "
-INPUT (YES/NO) = Lower
+INPUT (YES/NO) = DoLower
 DO INPUT check and display error if answer is not YES or NO
 OUTPUT "Uppercase letters: "
-INPUT (YES/NO) = Upper
+INPUT (YES/NO) = DoUpper
 DO INPUT check and display error if answer is not YES or NO
 OUTPUT "Numbers: "
-INPUT (YES/NO) = Numbers
+INPUT (YES/NO) = DoNumbers
 DO INPUT check and display error if answer is not YES or NO
 OUTPUT "Symbols: "
-INPUT (YES/NO) = Symbols
+INPUT (YES/NO) = DoSymbols
 DO INPUT check and display error if answer is not YES or NO
 
 OUTPUT "Would you like to save the Passwords/Passphrases to a file? "
@@ -58,3 +65,6 @@ DO INPUT check and display error if answer is not YES or NO
 IF DoExport == YES 
     OUTPUT "What would you like the file to be called?"
     INPUT (string) = OutFile
+
+OUTPUT "How many passwords/passphrases would you like to generate? "
+INPUT (integer) = NumberOf
