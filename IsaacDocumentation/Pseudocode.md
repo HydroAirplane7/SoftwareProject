@@ -32,6 +32,9 @@ DEFINE generate passphrase
   RETURN passphrase using [Words] and using [special] as space between words and inputed length
 
 DEFINE main function
-  
+  DEFINE arg parser for "-o" and "--ouput" used for saving password to output file
+
+  INPUT password or passphrase
+   
 
 ```
