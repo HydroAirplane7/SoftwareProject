@@ -25,7 +25,7 @@ SET [specialChars] as '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
 SET [special] as random digit in [specialChars]
 
 DEFINE generate password function
-  SET [characterPool] as inputed choice of character sets
+  SET [characterPool] as inputed choice of [character sets]
   RETURN password using the character pool and inputed length
 
 DEFINE generate passphrase
@@ -35,6 +35,24 @@ DEFINE main function
   DEFINE arg parser for "-o" and "--ouput" used for saving password to output file
 
   INPUT password or passphrase
-   
+
+  IF password
+    SET [character sets] as list
+    INPUT include uppercase? y/n
+    IF y
+      ADD to [character sets]
+    INPUT include lowercase? y/n
+    IF y
+      ADD to [character sets]
+    INPUT include numbers? y/n
+    IF y
+      ADD to [character sets]
+    INPUT include symbols? y/n
+    IF y
+      ADD to [character sets]
+
+  INPUT number of passwords/phrases to generate as [num generate]
+
+  SET 
 
 ```
