@@ -2,8 +2,7 @@ import secrets
 import string
 import argparse
 
-# Predefined word list for passphrases
-# WORD_LIST = ["apple", "orange", "banana", "grape", "peach", "plum", "berry", "melon", "kiwi", "mango"]
+# Setting up Mark's wordlist for passphrase words
 with open('adjectives.txt', 'r') as f:
     adjectives = [line.strip() for line in f]
 
@@ -13,12 +12,16 @@ with open('nouns.txt', 'r') as f:
 with open('verbs.txt', 'r') as f:
     verbs = [line.strip() for line in f]
 
+# Special characters for spacing in passphrase
+specialChars = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
+special = secrets.choice(specialChars)
+
 def generate_password(length, char_sets):
     char_pool = ''.join(char_sets)
     return ''.join(secrets.choice(char_pool) for _ in range(length))
 
 def generate_passphrase(length):
-    return '*'.join(secrets.choice(adjectives + nouns + verbs) for _ in range(length))
+    return f'{special}'.join(secrets.choice(adjectives + nouns + verbs) for _ in range(length))
 
 def main():
     # Setting up argument parser
