@@ -15,14 +15,7 @@
 6. The results should always be printed to the screen and optionally an output file.
 
 ### Pseudocode:
-
+```
 IMPORT required modules
 
-```
-test
-test
-  test test
-  test
-
-test
 ```
