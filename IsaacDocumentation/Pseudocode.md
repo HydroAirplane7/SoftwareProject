@@ -18,4 +18,20 @@
 ```
 IMPORT required modules
 
+OPEN word dictionaries
+  SET [Words] as dictionaries content
+
+SET [specialChars] as '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
+SET [special] as random digit in [specialChars]
+
+DEFINE generate password function
+  SET [characterPool] as inputed choice of character sets
+  RETURN password using the character pool and inputed length
+
+DEFINE generate passphrase
+  RETURN passphrase using [Words] and using [special] as space between words and inputed length
+
+DEFINE main function
+  
+
 ```
