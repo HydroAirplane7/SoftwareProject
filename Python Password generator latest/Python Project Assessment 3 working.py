@@ -14,14 +14,18 @@ with open('verbs.txt', 'r') as f:
 
 # Special characters for spacing in passphrase
 specialChars = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
-special = secrets.choice(specialChars)
+
 
 def generate_password(length, char_sets):
     char_pool = ''.join(char_sets)
     return ''.join(secrets.choice(char_pool) for _ in range(length))
 
 def generate_passphrase(length):
-    return f'{special}'.join(secrets.choice(adjectives + nouns + verbs) for _ in range(length))
+    return ' '.join(secrets.choice(adjectives + nouns + verbs) for _ in range(length))
+
+def generate_passphrase_special(length):
+    return f'{secrets.choice(specialChars)}'.join(secrets.choice(adjectives + nouns + verbs) for _ in range(length))
+    #  ^ choice in the f-string for different character each passphrase
 
 def main():
     # Setting up argument parser
@@ -60,13 +64,20 @@ def main():
     # Step 4: User chooses the number of passwords/phrases to generate
     num_generate = int(input("Enter the number of passwords/phrases to generate: "))
 
+
+    # Step 5: User chooses spaces or special for passphrase
+    spcChoice = input("Would you like to replace space between words with a special character? y/n ").strip().lower()
+
     # Generate and display the passwords or passphrases
     results = []
     for _ in range(num_generate):
         if choice == 'password':
             result = generate_password(length, char_sets)
         elif choice == 'passphrase':
-            result = generate_passphrase(length)
+            if spcChoice == 'y':
+                result = generate_passphrase_special(length)
+            elif spcChoice == 'n':
+                result = generate_passphrase(length)
         results.append(result)
         print(result)
 
