@@ -36,6 +36,8 @@ DEFINE main function
 
   INPUT password or passphrase
 
+  INPUT length   # (amount of words or letters)
+
   IF password
     SET [character sets] as list
     INPUT include uppercase? y/n
@@ -51,8 +53,20 @@ DEFINE main function
     IF y
       ADD to [character sets]
 
+    IF no inputs
+      DISPLAY no character sets error message
+
   INPUT number of passwords/phrases to generate as [num generate]
 
-  SET 
+  IF passphrase
+    INPUT replace space between words with special characters? y/n as [space choice]
 
+  RUN generate password or passphrase function with required inputs
+
+  DISPLAY password(s) or passphrase(s)
+
+  IF program ran with -o argument
+    OUTPUT password(s) or passphrase(s) to a file
+
+RUN main function
 ```
