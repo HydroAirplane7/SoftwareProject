@@ -18,7 +18,10 @@ Detailed background information on the chosen case study, the need for automatio
 
 ## Team Structure and Roles
 
-A description of how your team was organised, including the roles and responsibilities of each member.
+A description of how your team was organised, including the roles and responsibilities of each member
+- Isaac: Organiser, works mainly on documentation
+- Raja: Works mainly on the documentation
+- Josh: Works mainly on the code
 
 ## Problem Analysis and Requirements
 
