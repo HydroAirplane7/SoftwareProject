@@ -9,4 +9,4 @@
 * tasks assigned to members
   * Josh: Coding
   * Raja: User Documentation 
-  * Isaac: Developer Documentation
+  * Isaac: Other Documentation
