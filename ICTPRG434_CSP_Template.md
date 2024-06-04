@@ -1,9 +1,9 @@
 ---
 title: "ICTPRG434 Collaborative Software Project"
 author:
- - Student A (123456789)
- - Student B (123456789)
- - Student C (123456789)
+ - Raja (13247473)
+ - Josh (13243326)
+ - Isaac (13242482)
 ---
 
 # Executive Summary
