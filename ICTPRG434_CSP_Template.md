@@ -8,13 +8,14 @@ author:
 
 # Executive Summary
 
-Brief summary of the report that provides a high-level overview of the project
+This project involves the creation of a password or passphrase generator, where the user has the choice of a few options for their password or passphrase. This report involves the documentation of the processes in details involved in the creation of the program.
 
 # Project Overview
 
 ## Introduction
 
 Detailed background information on the chosen case study, the need for automation, and the objectives of the project.
+The chosen case study for this project was the "Secure Password Generator".
 
 ## Team Structure and Roles
 
