@@ -37,6 +37,20 @@ Outline of the initial ideas and conceptual approach to the problem.
 
 Detailed presentation of the developed algorithm, including flowcharts and pseudocode. See [this guide on creating mermaid flowcharts](https://mermaid.js.org/syntax/flowchart.html).
 
+### Requirements:
+
+1. Allow users to choose whether they would like to generate a password or passphrase.
+
+2. Allow users to choose the length of the password/phrase. (The number of characters for a password /or the number of words for a passphrase.)
+
+3. Allow the user to choose the character sets they wish to use, eg. uppercase, lowercase, numbers, symbols.
+
+4. Allow the user to choose the number of passwords/phases they would like to generate.
+
+5. Allow the user to choose an output file to place the generated password(s). (enabled with command line option i.e. -o)
+
+6. The results should always be printed to the screen and optionally an output file.
+
 ```mermaid
 flowchart LR
     A(Start) --> B[Input Year]
@@ -51,23 +65,64 @@ flowchart LR
     E --> H(End)
 ```
 
-```
-FUNCTION isLeapYear(year):
-    IF year MODULO 4 IS NOT EQUAL TO 0:
-        RETURN False
-    ELSE IF year MODULO 100 IS NOT EQUAL TO 0:
-        RETURN True
-    ELSE IF year MODULO 400 IS EQUAL TO 0:
-        RETURN True
-    ELSE:
-        RETURN False
 
-year = INPUT "Enter a year: "
-IF isLeapYear(year):
-    PRINT year, "is a leap year."
-ELSE:
-    PRINT year, "is not a leap year."
+### Pseudocode:
 ```
+IMPORT required modules
+
+OPEN word dictionaries
+  SET [Words] as dictionaries content
+
+SET [specialChars] as '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
+SET [special] as random digit in [specialChars]
+
+DEFINE generate password function
+  SET [characterPool] as inputed choice of [character sets]
+  RETURN password using the character pool and inputed length
+
+DEFINE generate passphrase
+  RETURN passphrase using [Words] and using [special] as space between words and inputed length
+
+DEFINE main function
+  DEFINE arg parser for "-o" and "--ouput" used for saving password to output file
+
+  INPUT password or passphrase
+
+  INPUT length   # (amount of words or letters)
+
+  IF password
+    SET [character sets] as list
+    INPUT include uppercase? y/n
+    IF y
+      ADD to [character sets]
+    INPUT include lowercase? y/n
+    IF y
+      ADD to [character sets]
+    INPUT include numbers? y/n
+    IF y
+      ADD to [character sets]
+    INPUT include symbols? y/n
+    IF y
+      ADD to [character sets]
+
+    IF no inputs
+      DISPLAY no character sets error message
+
+  INPUT number of passwords/phrases to generate as [num generate]
+
+  IF passphrase
+    INPUT replace space between words with special characters? y/n as [space choice]
+
+  RUN generate password or passphrase function with required inputs
+
+  DISPLAY password(s) or passphrase(s)
+
+  IF program ran with -o argument
+    OUTPUT password(s) or passphrase(s) to a file
+
+RUN main function
+```
+
 
 ## Software Design
 
