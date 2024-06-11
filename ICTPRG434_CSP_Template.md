@@ -14,8 +14,7 @@ This project involves the creation of a password or passphrase generator, where 
 
 ## Introduction
 
-Detailed background information on the chosen case study, the need for automation, and the objectives of the project.
-The chosen case study for this project was the "Secure Password Generator".
+The chosen case study for this project was the "Secure Password Generator". This was chosen as an easy way for users generate 1 or more passwords that are secure for multiple online accounts at once. This takes out the need to try and make up different passwords for different accounts. The program should give users the ability to choose a set of perameters for the output passwords/phrases. The program should also use a cryptographically secure pseudorandom number generator (CSPRNG) for the generation of passwords.
 
 ## Team Structure and Roles
 
