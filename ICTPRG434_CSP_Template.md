@@ -342,4 +342,5 @@ For code challenges refer to the debugging section. Some challenges faced includ
 
 # Appendices
 
-
+- https://automatetheboringstuff.com/
+- https://docs.python.org/3/howto/argparse.html
