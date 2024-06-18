@@ -324,7 +324,7 @@ Documentation of the testing process, including test cases, results, and any deb
 
 ## Meeting Notes
 
-Records of team meetings, including decisions made and action items.
+Refer to seperate markdown file.
 
 ## Project Management Tools and Techniques
 
