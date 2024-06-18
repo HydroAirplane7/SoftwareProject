@@ -140,7 +140,7 @@ Explanation of the software design, including the choice of programming language
 
 ## Code Development
 
-The actual code written for the project, with appropriate comments and explanations. If appropriate, this can just be a note to refer to a particular source code file or repository.
+Note: Code cannot be run properly without other files. To see all files please refer to folder containing source code.
 
 ```python
 # Name: Joshua Kovzan, Raja MC
@@ -328,17 +328,17 @@ Records of team meetings, including decisions made and action items.
 
 ## Project Management Tools and Techniques
 
-Overview of the tools and methodologies used for project management and collaboration.
+Tools used include the use of Trello to track progress, and GitHub to collaborate and congregate documentation. There were regular meetings to discuss progress, and what everyone should work on and towards. This helped to prevent falling behind on tasks.
 
 # Documentation
 
 ## Developer Documentation
 
-Detailed explanation of the code and architecture, aimed at future developers who might work on or maintain the project.
+Please refer to seperate word file.
 
 ## User Documentation
 
-User-friendly guide or manual, explaining how to use the automated solution. It is recommended that you add this as a separate document, rather than putting the documentation here.
+Please refer to seperate word file.
 
 # Reflection and Conclusion
 
