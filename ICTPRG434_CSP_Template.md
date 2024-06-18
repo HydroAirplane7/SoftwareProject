@@ -130,7 +130,7 @@ RUN main function
 
 ## Software Design
 
-Explanation of the software design, including the choice of programming language and the software architecture.
+The chosen language was Python, as the team had the most knowledge in this language. It is also a great program for running automated tasks and for object oriented programming which is used for this program.
 
 # Implementation
 
