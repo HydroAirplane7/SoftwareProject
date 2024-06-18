@@ -25,15 +25,11 @@ A description of how your team was organised, including the roles and responsibi
 
 ## Problem Analysis and Requirements
 
-A thorough analysis of the problem presented in the case study and the specific requirements for the automation solution.
+The problem faced is the need for a program that generates multiple passwords or pasphrases as people generally have multiple online acounts. This will provide an easy way to make multiple passwords without having to worry about thinking about what a new password should be. This also reduces the risk of reusing passwords. Requirements are disscussed in the Design Process section bellow.
 
 # Design Process
 
-## Conceptual Design
-
-Outline of the initial ideas and conceptual approach to the problem.
-
-## Algorithm Design
+## Conceptual and Algorithm Design
 
 Detailed presentation of the developed algorithm, including flowcharts and pseudocode. See [this guide on creating mermaid flowcharts](https://mermaid.js.org/syntax/flowchart.html).
 
