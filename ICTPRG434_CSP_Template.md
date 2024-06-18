@@ -344,3 +344,5 @@ For code challenges refer to the debugging section. Some challenges faced includ
 
 - https://automatetheboringstuff.com/
 - https://docs.python.org/3/howto/argparse.html
+- https://docs.python.org/3/library/secrets.html
+
