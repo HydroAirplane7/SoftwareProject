@@ -314,7 +314,7 @@ python generate_passwords.py -o output.txt
 
 ## Testing and Debugging
 
-Documentation of the testing process, including test cases, results, and any debugging carried out.
+Please refer to seperate word file.
 
 # Collaboration and Project Management
 
@@ -338,12 +338,8 @@ Please refer to seperate word file.
 
 # Reflection and Conclusion
 
-Reflection on the challenges faced during the project and how they were overcome, along with a discussion of the learning outcomes and skills developed. Summarise the project results, its success in meeting the objectives, and potential areas for future development or improvement.
+For code challenges refer to the debugging section. Some challenges faced included being able to communicate on the documentation and coding while not together. This was overcome by setting tasks to complete for next time we met. In future the use of branches should be used more often to facilitate the uploading or editing of files at the same time. The repository should also be cleaned up more to be more presentable and easy to navigate. The program achieved all requirements and sucessfully works as a password generator. To improve in the future, the use of arguments or options should be implimented instead of the command line option selecting, as to minimise time for power users. There could even be 2 versions of the program, or an option to run the program differently depending on the users choice.
 
 # Appendices
 
-Links to the code repositories containing the final source code, separate user manuals, presentations, or other documentation (if any).
 
-Any other relevant materials, such as additional diagrams, extended testing documentation, or supplementary research.
-
-References: A list of all the sources referenced throughout the project.
